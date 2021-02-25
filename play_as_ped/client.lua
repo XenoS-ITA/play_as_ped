@@ -7,7 +7,7 @@ Citizen.CreateThread(function()
 end)
 
 local whitelisted_identifier = {
-    "steam:YOUR_STEAM",
+    "steam:PLAYER_STEAM",
 }
 
 RegisterCommand("playasped", function()
