@@ -10,7 +10,7 @@ local whitelisted_identifier = { -- Should work with any license
     "steam:PLAYER_STEAM",
 }
 
-RegisterCommand("playasped", function()
+RegisterCommand('playasped', function()
     ESX.TriggerServerCallback('play_as_ped:getData', function(data)
         if data.group == "user" then -- Only mod, admin, superadmin
             local elements = {
@@ -104,7 +104,7 @@ RegisterCommand("playasped", function()
                     ESX.UI.Menu.CloseAll()
                     ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'ped_menu',
                     {
-                        title    = 'Choose a Animal',
+                        title    = 'Choose an Animal',
                         align    = 'top-left',
                         elements = elements
                     }, function(data, menu)
