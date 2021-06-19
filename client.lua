@@ -37,7 +37,7 @@ RegisterCommand('playasped', function()
             }, function(data, menu)
                 for i=1, #elements do
                     if data.current.value == i then
-                        if ped == "human" then
+                        if data.current.ped == "human" then
                             ESX.TriggerServerCallback('esx_skin:getPlayerSkin', function(skin, jobSkin)
                                 local isMale = skin.sex == 0
         
@@ -110,7 +110,7 @@ RegisterCommand('playasped', function()
                     }, function(data, menu)
                         for i=1, #elements do
                             if data.current.value == i then
-                                if ped == "human" then
+                                if data.current.ped == "human" then
                                     ESX.TriggerServerCallback('esx_skin:getPlayerSkin', function(skin, jobSkin)
                                         local isMale = skin.sex == 0
                 
